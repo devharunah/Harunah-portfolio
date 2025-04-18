@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme{
+    --breakpoint-vsm:376px;
+    --breakpoint-xsm:401px;
+    --breakpoint-xr:415px;
+}
+body{
+    overflow-x: hidden;
+}
