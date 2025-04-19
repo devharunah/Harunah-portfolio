@@ -4,7 +4,13 @@ import derimaticweb  from '/images/derimaticweb.png'
 import fantasy_gadets  from '/images/fantasy_gadets.png'
 import internet  from '/images/internetinternet.png'
 import github  from '/images/github_3291695.png'
+import { useNavigate } from 'react-router-dom'
+
 const Projects = ()=>{
+    const navigate = useNavigate()
+    const handleClick=()=>{
+        navigate('/notfound')
+    }
     return(
         <div   className=" bg-gray-50 rounded-3xl  py-20" >
        
@@ -60,9 +66,7 @@ const Projects = ()=>{
             </div>
             <div className='flex   mt-2'    >
             <div className='flex flex-col items-center'  >
-            <a href="/notfound">
-                <img className='w-6' src={internet}   alt="" />
-                </a>
+                <img onClick={handleClick} className='w-6' src={internet}   alt="" />
                 <p className='font-semibold'  >Website </p>
                 </div>
                 <div className='ml-10 items-center flex flex-col  '   >
@@ -92,9 +96,7 @@ const Projects = ()=>{
             </div>
             <div className='flex   mt-2'    >
             <div className='flex flex-col items-center'  >
-            <a href="/notfound">
-                <img className='w-6' src={internet}   alt="" />
-                </a>
+                <img onClick={handleClick} className='w-6' src={internet}   alt="" />
                 <p className='font-semibold'  >Website </p>
                 </div>
                 <div className='ml-10 items-center flex flex-col  '   >
@@ -130,9 +132,7 @@ const Projects = ()=>{
                 <p className='font-semibold'  >Website </p>
                 </div>
                 <div className='ml-10 items-center flex flex-col  '   >
-                <a href="https://github.com/devharunah/e-eccormaceweb">
-                <img className='w-6' src={github}   alt="" />
-                </a>
+                <img onClick={handleClick} className='w-6' src={github}   alt="" />
                 <p className='font-semibold'   >Github</p>
                 </div>
             </div>

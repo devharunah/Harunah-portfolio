@@ -9,7 +9,7 @@ const About = ()=>{
 
 
     return(
-        <div  className="py-20 mt-20 bg-gray-50 rounded-4xl " >
+        <div  className="py-20 mt-20 bg-gray-50  " >
             <div  className="flex justify-center mb-10"  >    
                 <h1 style={{fontFamily:"lato"}} className="text-3xl font-bold"   >About me</h1>
             </div>
