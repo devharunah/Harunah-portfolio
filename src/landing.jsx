@@ -47,7 +47,7 @@ const Hero = ()=>{
                 </ul>
             </div>
             
-            <div  className="flex justify-between w-40 max-xsm:hidden  "  >
+            <div  className="flex justify-between w-40 max-xsm:hidden max-xmd:hidden"  >
             <div>
             <a href={whatsappLink}>
             <img className="w-6" src={whatsapp}  alt="" />
@@ -76,8 +76,8 @@ const Hero = ()=>{
          
             <div >
                 <h2 className="font-semibold text-xl  max-sm:text-lg max-sm:text-green max-xsm:text-center max-sm:mt-10 "  >Hey,Iam Harunah</h2>
-                <h1 className="font-semibold text-4xl  mt-2  w-128 max-md:text-3xl max-md:w-100 max-sm:w-90 max-sm:text-3xl  "  > <span  className="text-blue-600 font-bold"  >Front</span> end Web-developer &   <span className="text-blue-600 font-bold"   >Graphic</span> Desinger  </h1>
-                <p className="w-128  mt-2 max-md:w-80 max-xsm:text-center "   >
+                <h1 className="font-semibold text-4xl  mt-2  w-128 max-md:text-3xl max-md:w-100 max-sm:w-90 max-sm:text-3xl max-xsm:text-center  "  > <span  className="text-blue-600 font-bold"  >Front</span> end Web-developer &   <span className="text-blue-600 font-bold"   >Graphic</span> Desinger  </h1>
+                <p className="w-128  mt-2 max-md:w-80 max-xsm:text-center max-xmd:w-60"   >
                 I design and build beautiful, responsive web experiences that connect people and ideas.
                  Blending clean code with creative visuals, I bring digital products to life with 
                  modern tools like React.js, Tailwind CSS, and thoughtful design.

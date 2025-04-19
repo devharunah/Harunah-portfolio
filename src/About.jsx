@@ -17,8 +17,8 @@ const About = ()=>{
                     <div   className="w-100 h-90 bg-blue-500 p-4  rounded-2xl overflow-hidden"      > 
                     <img className="w-full  relative bottom-40 " src={harunahimg}  alt="" />
                     </div>
-                    <div  className="ml-40 max-xsm:ml-4 " >
-                        <h1 className="font-semibold text-xl w-128 max-md:mt-4 max-xsm:w-80 max-xsm:text-center  "  >A Passionate Frontend Developer & Graphic Designer Crafting Digital Experiences.</h1>
+                    <div  className="ml-40 max-xsm:ml-4 max-xmd: " >
+                        <h1 className="font-semibold text-xl w-128 max-md:mt-4 max-xsm:w-80 max-xsm:text-center max-xmd:text-center max-xmd:w-80  "  >A Passionate Frontend Developer & Graphic Designer Crafting Digital Experiences.</h1>
                         <div  >
                         <p className="flex w-128 mt-4 max-md:text-center max-md:w-80 "  >
                         I'm Harunah, a front-end web developer and graphic designer from Uganda. 

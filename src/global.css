@@ -4,6 +4,7 @@
     --breakpoint-vsm:376px;
     --breakpoint-xsm:401px;
     --breakpoint-xr:415px;
+    --breakpoint-xmd:576px;
 }
 body{
     overflow-x: hidden;
