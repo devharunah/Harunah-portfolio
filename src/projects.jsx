@@ -17,16 +17,17 @@ const Projects = ()=>{
             <div className='flex justify-center mb-10  '   >
                 <h1 style={{fontFamily:"lato"}} className='font-bold text-3xl'  >My Projects.</h1>
             </div>
-            <div className='flex justify-center '   >
-            <div className='grid grid-cols-2 max-md:flex  max-md:flex-col   max-xsm:flex-col max-xsm:items-center  max-xsm:overflow-x-hidden  max-xsm:gap-10 gap-30 '   >
-            <div className='bg-white w-128  max-xsm:w-90  py-2 shadow-md '  >
-            <div  className='w-full h-60    ' >
+            <div className='flex justify-center px-10 '   >
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 '   >
+
+            <div className='bg-white w-auto   py-2 shadow-md '  >
+            <div  className='w-full h-60 ' >
             <img className='w-full rounded-xl object-fit' src={marieconcepts}   alt="" />
             </div>
             <div className='flex flex-col px-2 items-center justify-center ' >
-            <div  >
+            <div className='md:mt-12'  >
                 <h1 className='font-bold text-lg text-center '  >Graphic Desing Agency website</h1>
-                <p  className='max-xsm:w-80 text-center'    >
+                <p  className='text-center'    >
                 I designed and developed a brand identity and visual system for a creative Graphic
                  Design Agency. The project focused on creating a modern, bold, and versatile brand
                   that appeals to a wide
@@ -51,14 +52,14 @@ const Projects = ()=>{
         
           
          </div>
-         <div className='bg-white w-128  max-xsm:w-90  py-2 shadow-md '  >
+         <div className='bg-white w-auto  py-2 shadow-md '  >
             <div  className='w-full h-60' >
             <img className='w-full rounded-xl object-fit' src={derimaticweb}   alt="" />
             </div>
             <div className='flex flex-col px-2 items-center justify-center ' >
-            <div  >
-                <h1 className='font-bold text-lg max-xsm:text-center '  >DJ Portfolio Website</h1>
-                <p className='max-xsm:text-center  max-xsm:w-80 '    >
+            <div className='sm:mt-10' >
+                <h1 className='font-bold text-lg text-center  md:mt-10 '  >DJ Portfolio Website</h1>
+                <p className='text-center '    >
                 I designed and developed a dynamic portfolio website for a DJ, aimed at showcasing their music, 
                 events, and personal brand. The project focused on creating a bold, energetic, and interactive user
                  experience that reflects the DJ’s unique style and vibe.
@@ -80,14 +81,15 @@ const Projects = ()=>{
         
           
          </div>
-         <div className='bg-white w-128 max-xsm:w-90   py-2 shadow-md '  >
+         <div className='bg-white w-auto py-2 shadow-md '  >
             <div  className='w-full h-60' >
             <img className='w-full rounded-xl object-fit' src={newswebsite}   alt="" />
             </div>
             <div className='flex flex-col px-2 items-center justify-center ' >
             <div  >
-                <h1 className='font-bold text-lg max-xsm:text-center  '  >Forex & Bitcoin News Website</h1>
-                <p  className='max-xsm:text-center max-xsm:w-80'  >
+                <h1 className='font-bold text-lg text-center md:mt-10
+                 '  >Forex & Bitcoin News Website</h1>
+                <p  className='text-center '  >
                 I created a modern news website dedicated to providing real-time updates and insights on 
                 Forex and Bitcoin markets. The goal was to deliver financial content in a clean, organized, and
                  user-friendly layout, making complex market information 
@@ -110,14 +112,14 @@ const Projects = ()=>{
         
           
          </div>
-         <div className='bg-white w-128 max-xsm:w-90    py-2 shadow-md '  >
+         <div className='bg-white w-auto  py-2 shadow-md '  >
             <div  className='w-full h-60' >
             <img className='w-full rounded-xl object-fit' src={fantasy_gadets}   alt="" />
             </div>
             <div className='flex flex-col px-2 items-center justify-center ' >
             <div  >
-                <h1 className='font-bold text-lg max-xsm:text-center'  >Electron E-Commerce Website</h1>
-                <p className='max-xsm:w-80 max-xsm:text-center'   >
+                <h1 className='font-bold text-lg text-center md:mt-10 '  >Electron E-Commerce Website</h1>
+                <p className=' text-center'   >
                 I designed and developed a unique e-commerce website dedicated to selling electrons — a creative
                  concept built to showcase both technical web skills and imaginative digital branding. The project 
                  combined clean design, smooth user experience, and humor to

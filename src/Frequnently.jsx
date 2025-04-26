@@ -40,13 +40,14 @@ const Frequnently = ()=>{
         <div  className="mt-15 px-10 bg-gray-50 py-20 items-center flex  justify-center"  >
         <div  className="flex   max-sm:items-center max-sm:justify-center max-sm:flex-col "  >
         <div >
-            <h1 style={{fontFamily:"lato"}} className="font-bold text-3xl  max-xsm:text-center "  >Any Quetions ?</h1>
-            <h1 style={{fontFamily:"lato"}} className="font-bold text-3xl  max-xsm:text-center  "  >I gat you</h1>
-            <p  className="w-100  mt-4 max-xsm:text-center max-xsm:w-80 "  >
+            <h1 style={{fontFamily:"lato"}} className="font-bold text-3xl  text-center "  >Any Quetions ?</h1>
+            <h1 style={{fontFamily:"lato"}} className="font-bold text-3xl  text-center  "  >I gat you</h1>
+            <div className="text-center"   >
+            <p  className=" mt-4 max-xsm:text-center  "  >
             Have questions? I’ve put together some of the most common inquiries about my services, skills,
-             and workflow. Whether you’re curious about the tools I use, how I work with 
-            clients, or how to start a project with me — you’ll find quick answers here.
+             and workflow.
             </p>
+            </div>
                 <div className="flex  items-center mt-2"  >
                 <p  className="font-semibold max-xsm:text-center  text-blue-500  cursor-pointer "  > <a href={whatsappLink}  >More FAQs on WhatsApp</a> </p>
                 <img className="w-5 ml-4" src={rightarrow}  alt="" />
