@@ -18,7 +18,7 @@ const About = ()=>{
                 <h1 style={{fontFamily:"lato"}} className="text-3xl font-bold"   >About me</h1>
             </div>
                <div  className="flex  justify-center  max-md:flex-col items-center"  >
-               <div  className="grid grid-cols-1 gap-2 sm:grid-cols-2"  >    
+               <div  className=" hidden  sm:grid grid-cols-1 gap-2 sm:grid-cols-2"  >    
                <div className="flex flex-col justify-center items-center px-20 py-20 sm:py-10 sm:px-10 bg-blue-500 " >
                     <h1 className="font-semibold text-lg"  >Repositories</h1>
                     <p className="font-bold text-2xl"  >15+</p>
