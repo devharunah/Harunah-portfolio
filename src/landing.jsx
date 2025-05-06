@@ -33,7 +33,7 @@ const Hero = ()=>{
   },[ ]);
     return(
         <div>
-          <div className=  {` flex justify-between fixed w-full  py-1 shadow-md z-50 transition-all  px-10 pt-4  ${scrolled ?  "bg-white" : "bg-transparent text-black" } ` }>
+          <div className=  {` flex justify-between fixed w-full  py-1 shadow-md z-50 transition-all  px-10 pt-4  ${scrolled ?  "bg-transparent" : "bg- text-black" } ` }>
             <div  className=" justify-between flex w-full mb-2 sm:w-auto "  >
               <div className="flex items-center"  >
                 <div>
@@ -82,7 +82,7 @@ const Hero = ()=>{
           <div className="sm:flex  bg-blue-50  justify-between  items-center   py-10 max-xsm:flex-col max-vsm:px-12  px-10 "   >
             <div className="text-center sm:text-left pt-5  sm:w-[50vw] sm:px-10" >
                 <h2 className="font-semibold text-xl  max-sm:text-lg max-sm:text-green max-xsm:text-center max-sm:mt-10 max-md:text-center "  >Hey,Iam Harunah</h2>
-                <h1 className="font-semibold text-4xl  mt-2   max-md:text-3xl  max-sm:text-3xl max-xsm:text-center  "  > <span  className="text-blue-600 font-bold"  >Front</span> end Web-developer &   <span className="text-blue-600 font-bold"   >Graphic</span> Desinger  </h1>
+                <h1 className="font-semibold text-5xl  mt-2 "  > <span  className="text-blue-600 font-bold"  >Front</span> end Web-developer &   <span className="text-blue-600 font-bold"   >Graphic</span> Desinger  </h1>
                 <p className="  mt-2"   >
                 I design and build beautiful, responsive web experiences that connect people and ideas.
                  Blending clean code with creative visuals, I bring digital products to life with 
