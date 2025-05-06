@@ -8,7 +8,7 @@ const Services = ()=>{
         <div className="flex justify-center"  >
             <h1 style={{fontFamily:'lato'}} className="font-bold text-3xl"  >Services.</h1>
         </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4   px-15 py-10 items-center"  >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4   px-20 py-10 items-center"  >
             <div  className=" border-2 border-gray-200 py-20 flex justify-center items-center flex-col px-10 sm:py-auto w-full h-auto rounded-md "  >
                   <div className='mb-4   '   >
                     <div className='w-14'  >
@@ -24,7 +24,7 @@ const Services = ()=>{
                   </div>
                  
                 </div>
-                <div  className=" border-2 border-gray-200  flex justify-center py-20 px-10 items-center flex-col  w-full h-auto"  >
+                <div  className=" border-2 border-gray-200  flex justify-center py-10 px-20 items-center flex-col  w-full h-auto"  >
                   <div className="mb-4 w-15 "   >
                     <img className='w-full max-xsm:w-12' src={webdesignimage}   alt="" />
                   </div>
@@ -34,7 +34,7 @@ const Services = ()=>{
                    communicate your message clearly and effectively. 
                   </p>
                 </div>
-                <div  className=" border-2 border-gray-200 flex justify-center items-center flex-col w-full h-auto px-10 py-20"  >
+                <div  className=" border-2 border-gray-200 flex justify-center items-center flex-col w-full h-auto px-20 py-10"  >
                   <div  className='mb-4 w-15  '  >
                     <img className='w-full' src={graphicdesignimage}   alt="" />
                   </div>
@@ -44,7 +44,7 @@ const Services = ()=>{
                    seamless user experiences. 
                   </p>
                 </div>
-                <div  className=" border-2 border-gray-200 flex justify-center items-center flex-col  w-full h-auto  py-20 px-10"  >
+                <div  className=" border-2 border-gray-200 flex justify-center items-center flex-col  w-full h-auto  py-10 px-20"  >
                   <div className='mb-4 w-15' >
                     <img className='w-full' src={brandingimage}   alt="" />
                   </div>
