@@ -4,21 +4,46 @@ import reactimage from "/images/atom_4969244.png"
 import figmaimage from "/images/typescript_5968381.png"
 import illustratorimage from "/images/html-5_5968267.png"
 import photoshopimage from "/images/photoshop_5968520.png"
-import harunahimg from "../public/images/harunah_web.png"
+import { useNavigate } from "react-router-dom"
+
 const About = ()=>{
 
-
+    const navigate = useNavigate();
+    const readmoreclick = ()=>{
+        navigate('/projects')
+    }
     return(
         <div  className="py-20 mt-20 bg-gray-50  " >
             <div  className="flex justify-center mb-10"  >    
                 <h1 style={{fontFamily:"lato"}} className="text-3xl font-bold"   >About me</h1>
             </div>
                <div  className="flex  justify-center  max-md:flex-col items-center"  >
-                    <img className="w-100 hidden sm:block relative bottom-40 " src={harunahimg}  alt="" />
+               <div  className="grid grid-cols-1 gap-2 sm:grid-cols-2"  >    
+               <div className="flex flex-col justify-center items-center px-20 py-20 sm:py-10 sm:px-10 bg-blue-500 " >
+                    <h1 className="font-semibold text-lg"  >Repositories</h1>
+                    <p className="font-bold text-2xl"  >15+</p>
+                </div>
+                <div className="flex flex-col justify-center items-center px-20 py-20 sm:py-10 sm:px-10 bg-blue-500 " >
+                    <h1 className="font-semibold text-lg"  >Exprience</h1>
+                    <p className="font-bold text-2xl"  >3+yrs</p>
+                </div>
+                <div className="flex flex-col justify-center items-center px-20 py-20 sm:py-10 sm:px-10 bg-blue-500 " >
+                    <h1 className="font-semibold text-lg"  >Projects</h1>
+                    <p className="font-bold text-2xl"  >100+</p>
+                </div>
+                <div className="flex flex-col justify-center items-center px-20 py-20 sm:py-10 sm:px-10 bg-blue-500 " >
+                    <h1 className="font-semibold text-lg"  >Clients</h1>
+                    <p className="font-bold text-2xl"  >10+</p>
+                </div>
+                <div className="flex justify-center mt-4 items-center"  >
+                <button  className="py-1 px-4 cursor-pointer  rounded-md outline-0 border-2" onClick={readmoreclick} >Read more </button>
+                <button  className="py-2 px-6 bg-blue-500 ml-4 text-white  cursor-pointer rounded-md outline-0 border-0" >Hire me </button>
+                </div>  
+            </div>
                     <div >
                         <div className=" sm:w-[50vw]  px-10" >
-                        <h1 className="font-semibold text-xl text-center "  >A Passionate Frontend Developer & Graphic Designer Crafting Digital Experiences.</h1>
-                        <p className="text-center  " >
+                        <h1 className="font-semibold text-2xl text-center "  >A Passionate Frontend Developer & Graphic Designer Crafting Digital Experiences.</h1>
+                        <p className="text-center mt-4 " >
                         I'm Harunah, a front-end web developer and graphic designer from Uganda. 
                         I’m passionate about crafting clean,
                          responsive websites and intuitive user interfaces that make an impact.
@@ -26,20 +51,6 @@ With a growing skill set in React.js, Tailwind CSS, and modern design tools, I�
  meaningful digital experiences. Whether it's building web apps, designing brand visuals, or collaborating on 
  creative projects, I’m always eager to learn, grow, and push boundaries.
                             </p>
-                            <div  className="flex   py-2 px-1 mt-2 justify-between    rounded-lg"  >
-                            <div  className="flex flex-col items-center" >
-                                    <h1 style={{fontFamily:"lato"}}  className="font-bold text-3xl"  >3+</h1>
-                                    <p  className="font-semibold" >Years of Expirience </p>
-                                </div>
-                                <div  className="flex flex-col items-center"   >
-                                    <h1 style={{fontFamily:"lato"}}  className="font-bold text-3xl"  >100+</h1>
-                                    <p  className="font-semibold" >Projects </p>
-                                </div>
-                                <div  className="flex flex-col items-center"   >
-                                    <h1 style={{fontFamily:"lato"}}  className="font-bold text-3xl"  >30+</h1>
-                                    <p  className="font-semibold" >Succecfull Projects </p>
-                                </div>
-                            </div>
                         </div>
                        
                     </div>
