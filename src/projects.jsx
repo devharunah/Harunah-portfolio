@@ -26,7 +26,7 @@ const Projects = ()=>{
             </div>
             <div className='flex flex-col px-2 items-center justify-center ' >
             <div className='md:mt-12'  >
-                <h1 className='font-bold text-lg text-center '  >Graphic Desing Agency website</h1>
+                <h1 className='font-bold text-lg text-center '  >Graphic Design  Agency website</h1>
                 <p  className='text-center'    >
                 I designed and developed a brand identity and visual system for a creative Graphic
                  Design Agency. The project focused on creating a modern, bold, and versatile brand

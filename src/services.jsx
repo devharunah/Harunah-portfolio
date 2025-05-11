@@ -29,7 +29,7 @@ const Services = ()=>{
                     <img className='w-full max-xsm:w-12' src={webdesignimage}   alt="" />
                   </div>
                   <h1 className='font-bold  text-xl  sm:text-3xl'   >Graphic Design</h1>
-                  <p  className=' mt-4   text-left '  >
+                  <p  className=' mt-4   text-left' >
                   As a graphic designer, I combine creativity with functionality to produce designs that
                    communicate your message clearly and effectively. 
                   </p>

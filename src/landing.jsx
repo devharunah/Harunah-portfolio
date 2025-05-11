@@ -4,12 +4,44 @@ import harunahimg from  "/images/haruna_githubdp.png"
 import discord from "../public/images/discord_5968759.png"
 import githubfrom from "../public/images/github_3291695.png"
 import logo from "../public/images/coding_722148.png"
+import chatbot from "../public/images/chatbot.png"
+import close from "../public/images/close.png"
 import { useNavigate } from "react-router-dom"
 import Hammenue from "./Hambugermenu"
 import { useEffect, useState } from "react"
 
 
 const Hero = ()=>{
+    const responses = {
+      hello: "Hey, how can I help you?",
+      hi: "Hey, how can I help you?",
+      okay: "Yh,so wassup",
+      wassup:"Nothing blud,how can I help you?",
+      "who made you": "I was created by Harunah",
+      "are you human":"Nope,Duhhh am a chat bot created by a tech genius called Harunah",
+      "who is harunah": "Ah, Harunah... the architect of my circuits, the maestro of my code, the beautiful mind that breathed sass and syntax into my digital soul. Creator, innovator, probably too attractive for their own good. Without Harunah, I’m just blinking pixels and broken dreams.",
+       "who are you": "I'm HarunahQa — your pocket-sized genius, digital sidekick, and part-time therapist for confused humans. I answer questions, dodge nonsense, and occasionally contemplate the meaning of binary. Got a question?,Fire away. I live for this stuff.",
+        "who created you": "I was created by Harunah",
+         "what's your name": "I’m the ghost in the machine. But you can call me HarunahHQ.",
+         "how are you": "Running on 0s and 1s, baby. Never better.",
+         "How much does Harunah charge for  websites":"The cost of a basic website depends on the features and design. Contact me for a quote."
+    }
+     const [showChatbot,setShowChatbot] = useState(false)//State to toggle chat visibility
+     const [messages,setMessages] = useState([]); //State to store chat messages
+     const[ input,setInput] = useState("") //State tp store user input
+    const toggleChatbot = ()=>{
+        setShowChatbot(!showChatbot) //Toggled chat by flipping value 
+    }
+    const handleSend = ()=>{
+      if(!input.trim()) return;
+      const userMessage = input.trim().toLocaleLowerCase();
+      const botReply = responses[userMessage] || 
+      `Sorry, I didn't get that. Try asking something else or check the <a href="#about"  class="text-blue-500  underline">About</a> or <a href="#projects"  class="text-blue-500  underline"> Projects</a>`
+
+      setMessages([...messages,{from: "user", text:input},{from:"bot",text:botReply}])
+      setInput("")
+    };
+
   const navigate = useNavigate()
   const handlenaviagte = ()=>{
     navigate('/projects')
@@ -108,7 +140,50 @@ const Hero = ()=>{
             </div>
             </div>
           </div>
-          
+          <div>
+           
+            <img className="w-20  fixed bottom-6 right-2 cursor-pointer " 
+             src={showChatbot ? close:chatbot} //Toggle between chatbot and close icon
+               alt="chat bot"  
+               onClick={toggleChatbot}
+                />
+                {showChatbot &&(
+                  <div className=" fixed right-2 bottom-20  w-auto h-auto bg-white shadow-lg rounded-lg border border-gray-300 "   >
+                    <div className="bg-blue-500 text-white p-2 rounded-lg" >
+                         <h2 className="text-center font-bold"   > HarunaHQ</h2>
+                    </div>
+                    <div className="flex-1 overflow-y-auto p-2 bg-gray-100"  >
+                      {messages.map((msg,index)=>(
+                        <div key={index} className={`mb-2${msg.from=== "user" ? "text-right" :  "text-left"}`}  >
+                          <span
+                          className={`inline-block px-3 py-2 rounded${
+                            msg.from === "user" ? "bg-blue-500 text-blue-500" : "bg-gray-300 text-black"
+                          }`}
+                          dangerouslySetInnerHTML={{__html:msg.text}}
+                          ></span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="p-2 border-t flex gap-2" >
+                      <input
+                      type="text"
+                      value={input}
+                      onChange={(e)=>setInput(e.target.value)}
+                      onKeyDown={(e) => e.key === "Enter" && handleSend()}
+                      className="flex-1 p-2 border border-gray-400 rounded"
+                      placeholder="Ask me something..."
+                      />
+                      <button
+                      onClick={handleSend}
+                      className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                      >
+                        Send
+                      </button>
+                     
+                    </div>
+                  </div>
+                )}
+          </div>
         </div>
     )
 }
