@@ -1,7 +1,7 @@
 import "./global.css";
 import Hero from "./landing";
 import About from "./About";
-import Services from "./services";
+import ServicesGrid from "./services";
 import Projects from "./projects";
 import Footer from "./Footer";
 import HeroSection from "./test";
@@ -12,7 +12,7 @@ import Freqently from "./Frequnently"
       <>
    <Hero/>
    <About/>
-     <Services/>
+     <ServicesGrid/>
      <Projects/>
         <Freqently/>
       <Footer/>  

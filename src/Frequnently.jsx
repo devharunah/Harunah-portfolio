@@ -49,7 +49,7 @@ const Frequnently = ()=>{
             </p>
             </div>
                 <div className="flex  items-center mt-2"  >
-                <p  className="font-semibold max-xsm:text-center  text-blue-500  cursor-pointer "  > <a href={whatsappLink}  >More FAQs on WhatsApp</a> </p>
+                <p  className="font-semibold max-xsm:text-center  text-black  cursor-pointer "  > <a href={whatsappLink}  >More FAQs on WhatsApp</a> </p>
                 <img className="w-5 ml-4" src={rightarrow}  alt="" />
                 </div>
         </div>
@@ -63,7 +63,7 @@ const Frequnently = ()=>{
                     </div>
                     {activeQuetion === index &&(
                         <div className="mt-2"  >
-                           <p className="text-12 text-blue-700"  > {faq.answer}  </p>
+                           <p className="text-12 text-black"  > {faq.answer}  </p>
                         </div>
                     )}
 

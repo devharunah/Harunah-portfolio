@@ -25,16 +25,14 @@ const Hammenue = () =>{
                       </div>
 
                       <div style={{ backgroundColor:"rgba(0, 0, 0, 0.8)"}}  className={ ` ${isopen ? 'block': 'hidden'}   h-screen w-128 z-50 fixed right-0 top-0` }  >
-                            <ul className="flex justify-center items-center flex-col" >
-                            <li  className="text-white text-xl mt-10"  > <a href="/"> Home  </a>   </li>
-                            <li onClick={aboutnavigate}  className="text-white text-xl  mt-10 "  > <a href="/about"> About  </a>   </li>
-                            <li onClick={handlenaviagte} className="text-white text-xl mt-10  "   > <a href="/projects"> Projects  </a>   </li>
+                            <ul className="flex justify-center space-y-6 border-2 py-10 border-red-500 text-center items-center flex-col" >
+                            <li  className="text-white"  > <a href="/"> Home  </a>   </li>
+                            <li onClick={aboutnavigate}  className="text-white"  > <a href="/about"> About  </a>   </li>
+                            <li onClick={handlenaviagte} className="text-white"   > <a href="/projects"> Projects  </a>   </li>
+                                <div onClick={closenavbar} className="bg-black cursor-pointer text-white rounded-lg px-4 py-1"  >Close menue</div>
                             </ul>
                           
-                     <div className="flex justify-center items-center relative top-20"  >
-                                <div onClick={closenavbar} className="bg-black cursor-pointer text-white px-4 py-2"  >Close menue</div>
-                            </div>
-                            <div  className=" justify-between mt-40 ml-20  flex "  >
+                            <div  className=" justify-between mt-40 ml-20  px-15 sm:px-0  flex "  >
                                         <div>
                                         <a className="items-center flex flex-col" >
                                         <img className="w-[1.5em]" src={whatsapp}  alt="" />

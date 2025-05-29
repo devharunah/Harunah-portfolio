@@ -8,7 +8,7 @@ import linkdin from '../public/images/linkedinclr.png'
     
         return(
             
-        <footer className=" w-full pt-12 px-4  bg-blue-950  "   >
+        <footer className=" w-full pt-12 px-4  bg-black  "   >
          
             <div  className="grid grid-cols-3 max-xsm:flex max-xsm:flex-col  " >
             <div>
