@@ -45,7 +45,7 @@ import linkdin from '../public/images/linkedinclr.png'
             </div>
             <div className="flex justify-between mt-10  max-xsm:flex-col"  >
                 <p className="text-gray-400"  >Copyright © 2023 DevHarunah. All rights reserved.</p>
-                <p className="text-gray-400"  >  <a href={whatsappLink}>Designed by Kakooza Harunah</a>    </p>
+                <p className="text-gray-400"  >  <a href={whatsappLink}>Designed by Kakooza</a>    </p>
                 <p className="text-gray-400"  >  <a href={whatsappLink}>Designed by Kakooza Harunah</a> </p>
                 </div>
         </footer>
