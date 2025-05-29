@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useRef } from 'react';
+import { useInView } from 'framer-motion';
 import harunahimg from "../public/images/haruna_githubdpblack.png"
 const About = () => {
   const [yearsCount, setYearsCount] = useState(0);
@@ -21,18 +23,20 @@ const About = () => {
       }
     }, 16);
   };
+   const statsRef = useRef(null);
+  const isInview = useInView(statsRef,{once:true});
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      animateCounter(3, setYearsCount, 2000);
+    if(isInview){
+       animateCounter(3, setYearsCount, 2000);
       animateCounter(15, setReposCount, 2000);
       animateCounter(30, setProjectsCount, 2200);
       animateCounter(10, setClientsCount, 1000);
-    }, 500);
+    }
+    
+  }, [isInview]);
 
-    return () => clearTimeout(timer);
-  }, []);
-
+ 
   return (
     <div className="bg-white min-h-screen py-16 px-4">
       <div className="max-w-6xl mx-auto">
@@ -104,13 +108,13 @@ const About = () => {
         <div className="mt-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-black mb-2">
+              <div ref={statsRef} className="text-4xl md:text-5xl font-bold text-black mb-2">
                 {yearsCount}+
               </div>
               <p className="text-lg text-black font-medium">Years Experience</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-black mb-2">
+              <div ref={statsRef} className="text-4xl md:text-5xl font-bold text-black mb-2">
                 {reposCount}+
               </div>
               <p className="text-lg text-black font-medium">Repositories</p>
