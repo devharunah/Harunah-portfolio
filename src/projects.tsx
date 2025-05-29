@@ -1,4 +1,4 @@
-// import newswebsite  from '/images/newswebiste.png'
+
 // import newswebsite  from '/images/newswebiste.png'
 // import derimaticweb  from '/images/derimaticweb.png'
 // import fantasy_gadets  from '/images/fantasy_gadets.png'
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
       id: 1,
       title: "Graphic Desing Agency",
       description:"Logos, layouts, and a little bit of magic. I conjure up designs that make your brand unforgettable. Need visuals that slap harder than a typo in Comic Sans? You're in the right enchanted corner of the internet.",
-      image:'/images/Marieconceptproject.png',
+      image:'../public/images/Marieconceptproject.png',
       technologies: ["Html", "CSS", "Javascript"],
       category: "Web Development",
       liveUrl: "https://marieconceptstst.netlify.app/dist/",
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
       id: 2,
       title: "Real Estate Website",
       description:"From polished property listings to seamless user journeys, this site turns browsers into buyers. I design real estate experiences that feel less like paperwork and more like",
-      image:"/images/realestate_website.png",
+      image:"../public/images/realestate_website.png",
       technologies: ["React.js", "Tailwindcss", "node.js"],
       category: "Web Development",
       liveUrl: "https://elite-estates-proj.netlify.app/",
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
       id: 3,
       title: "Labour Day social media Flayer",
       description:"Grunge textures, industrial font, tools, calloused hands, steel and denim vibes. Throw in a hard hat or two if you're feeling spicy.",
-      image:"/images/labourday_flayer.jpg",
+      image:"../public/images/labourday_flayer.jpg",
       technologies: ["Figma", "Adobe Illustrator", "Brand Strategy"],
       category: "design",
       liveUrl: "file:///C:/Users/HP/Desktop/MYPROJECTS/Harunah-portfolio/public/images/labourday_flayer.jpg",
@@ -57,7 +57,7 @@ const ProjectsSection = () => {
       id: 4,
       title: "Crpyto News site",
       description:"Stay ahead of the block. We bring you real-time crypto news, market insights, and chain-shattering updates—minus the fluff. Whether it’s Bitcoin booms or Web3 wonders, we keep your feed sharp, fast, and always plugged in.",
-      image:"/images/newswebiste.png",
+      image:"../public/images/newswebiste.png",
       technologies: ["Figma", "Adobe Illustrator", "Brand Strategy"],
       category: "Web Development",
       liveUrl: "#",

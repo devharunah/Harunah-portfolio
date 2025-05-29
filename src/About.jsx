@@ -24,7 +24,7 @@ const About = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      animateCounter(5, setYearsCount, 2000);
+      animateCounter(3, setYearsCount, 2000);
       animateCounter(15, setReposCount, 2000);
       animateCounter(30, setProjectsCount, 2200);
       animateCounter(10, setClientsCount, 1000);
