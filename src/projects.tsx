@@ -5,8 +5,6 @@
 // import internet  from '/images/internetinternet.png'
 
 import { useNavigate } from 'react-router-dom'
-
-
 import { useState } from "react";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -29,17 +27,17 @@ const ProjectsSection = () => {
       id: 1,
       title: "Graphic Desing Agency",
       description:"Logos, layouts, and a little bit of magic. I conjure up designs that make your brand unforgettable. Need visuals that slap harder than a typo in Comic Sans? You're in the right enchanted corner of the internet.",
-      image:'../public/images/Marieconceptproject.png',
+      image:'/images/Marieconceptproject.png',
       technologies: ["Html", "CSS", "Javascript"],
       category: "Web Development",
-      liveUrl: "#",
+      liveUrl: "https://marieconceptstst.netlify.app/dist/",
       githubUrl: "#",
     },
     {
       id: 2,
       title: "Real Estate Website",
       description:"From polished property listings to seamless user journeys, this site turns browsers into buyers. I design real estate experiences that feel less like paperwork and more like",
-      image:"../public/images/realestate_website.png",
+      image:"/images/realestate_website.png",
       technologies: ["React.js", "Tailwindcss", "node.js"],
       category: "Web Development",
       liveUrl: "https://elite-estates-proj.netlify.app/",
@@ -49,7 +47,7 @@ const ProjectsSection = () => {
       id: 3,
       title: "Labour Day social media Flayer",
       description:"Grunge textures, industrial font, tools, calloused hands, steel and denim vibes. Throw in a hard hat or two if you're feeling spicy.",
-      image:"../public/images/labourday_flayer.jpg",
+      image:"/images/labourday_flayer.jpg",
       technologies: ["Figma", "Adobe Illustrator", "Brand Strategy"],
       category: "design",
       liveUrl: "file:///C:/Users/HP/Desktop/MYPROJECTS/Harunah-portfolio/public/images/labourday_flayer.jpg",
@@ -59,14 +57,13 @@ const ProjectsSection = () => {
       id: 4,
       title: "Crpyto News site",
       description:"Stay ahead of the block. We bring you real-time crypto news, market insights, and chain-shattering updates—minus the fluff. Whether it’s Bitcoin booms or Web3 wonders, we keep your feed sharp, fast, and always plugged in.",
-      image:"../public/images/newswebiste.png",
+      image:"/images/newswebiste.png",
       technologies: ["Figma", "Adobe Illustrator", "Brand Strategy"],
       category: "Web Development",
       liveUrl: "#",
       githubUrl: "#",
     },
   ];
-
   const filteredProjects =
     activeFilter === "all"
       ? projects
@@ -112,10 +109,10 @@ const ProjectsSection = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+                <div className="absolute  border-red-500 inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
                   <a
                     href={project.liveUrl}
-                    className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center hover:bg-white/30"
+                    className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex  items-center justify-center hover:bg-white/30"
                   >
                     <ExternalLink size={16} className="text-white" />
                   </a>
@@ -127,8 +124,11 @@ const ProjectsSection = () => {
                   </a>
                 </div>
               </div>
-              <div className="p-4">
-                <h4 className="text-xl font-semibold mb-1">{project.title}</h4>
+              <div className="p-4 ">
+                <div className='flex items-center space-x-4' >
+                   <h4 className="text-xl font-semibold mb-1">{project.title}</h4>
+                <a  className='underline cursor-pointer' href={project.liveUrl} >Live Demo</a>
+                  </div>
                 <p className="text-sm text-muted-foreground mb-3">
                   {project.description}
                 </p>
