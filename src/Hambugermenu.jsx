@@ -1,66 +1,90 @@
 import { useState } from "react";
-import whatsapp from "../public/images/whatsapp_254409.png"
-import linkdein from "../public/images/linkedin_3536569.png"
-import discord from "../public/images/discord_5968759.png"
-import githubfrom from "../public/images/github_3291695.png"
+import whatsapp from "../public/images/whatsapp_254409.png";
+import linkdein from "../public/images/linkedin_3536569.png";
+import discord from "../public/images/discord_5968759.png";
+import githubfrom from "../public/images/github_3291695.png";
 import { useNavigate } from "react-router-dom";
-const Hammenue = () =>{
-    const navigate = useNavigate()
-    const handlenaviagte = ()=>{
-        navigate('/projects')
-      }
-      const aboutnavigate =()=>{
-        navigate('/about')
-      }
-    const [isopen,setisopen] = useState(false)
-    const closenavbar = () =>{
-        setisopen(false)
-    }
-    return(
-        <div>
-              <div className=" w-auto  h-auto sm:hidden static right-0  "  >
-                      <div onClick={ ()=>{setisopen(!isopen)}} style={{borderRadius:"9999999999999px"}} className="w-6 h-1  bg-black  cursor-pointer  z-50" > </div>
-                      <div onClick={ ()=>{setisopen(!isopen)}} style={{borderRadius:"9999999999999px"}} className="w-6 h-1 bg-black mb-1 mt-1 cursor-pointer bg-balck" ></div>
-                      <div onClick={ ()=>{setisopen(!isopen)}} style={{borderRadius:"9999999999999px"}} className="w-6 h-1  bg-black  cursor-pointer" ></div>
-                      </div>
 
-                      <div style={{ backgroundColor:"rgba(0, 0, 0, 0.8)"}}  className={ ` ${isopen ? 'block': 'hidden'}   h-screen w-128 z-50 fixed right-0 top-0` }  >
-                            <ul className="flex justify-center space-y-6 border-2 py-10 border-red-500 text-center items-center flex-col" >
-                            <li  className="text-white"  > <a href="/"> Home  </a>   </li>
-                            <li onClick={aboutnavigate}  className="text-white"  > <a href="/about"> About  </a>   </li>
-                            <li onClick={handlenaviagte} className="text-white"   > <a href="/projects"> Projects  </a>   </li>
-                                <div onClick={closenavbar} className="bg-black cursor-pointer text-white rounded-lg px-4 py-1"  >Close menue</div>
-                            </ul>
-                          
-                            <div  className=" justify-between mt-40 ml-20  px-15 sm:px-0  flex "  >
-                                        <div>
-                                        <a className="items-center flex flex-col" >
-                                        <img className="w-[1.5em]" src={whatsapp}  alt="" />
-                                        <p className="text-white"   >Whatsapp</p>
-                                        </a>
-                                      </div>
-                            
-                                      <div>
-                                        <a className="flex flex-col items-center" href="https://www.linkedin.com/in/kakooza-harunah-701882350/">
-                                        <img className="w-[1.5em]" src={linkdein}  alt="" />
-                                        <p  className="text-white" >Linkdin</p>
-                                        </a>
-                                      </div>
-                                      <div>
-                                        <a className="flex flex-col justify-center items-center" href="https://discord.com/channels/@me">
-                                        <img className="w-[1.5em]" src={discord}  alt="" />
-                                        <p  className="text-white" >Discord</p> 
-                                        </a>
-                                      </div>
-                                      <div>
-                                        <a className="flex flex-col items-center justify-center" href="https://github.com/devharunah">
-                                        <img className="w-[1.5em]" src={githubfrom}  alt="" />
-                                        <p className="text-white"  >Github</p>
-                                        </a>
-                                      </div>
-                     </div>
+const Hammenue = () => {
+  const navigate = useNavigate();
+  const handlenaviagte = () => navigate('/projects');
+  const aboutnavigate = () => navigate('/about');
+  const [isopen, setisopen] = useState(false);
+  const closenavbar = () => setisopen(false);
+
+  return (
+    <div>
+      {/* Hamburger Icon */}
+      <div className="sm:hidden fixed top-6 right-6 z-50">
+        <button
+          onClick={() => setisopen(!isopen)}
+          className="flex flex-col gap-1 w-8 h-8 justify-center items-center focus:outline-none"
+        >
+          <span
+            className={`block h-1 w-8 bg-black rounded transition-all duration-300 ${
+              isopen ? "rotate-45 translate-y-2" : ""
+            }`}
+          ></span>
+          <span
+            className={`block h-1 w-8 bg-black rounded transition-all duration-300 ${
+              isopen ? "opacity-0" : ""
+            }`}
+          ></span>
+          <span
+            className={`block h-1 w-8 bg-black rounded transition-all duration-300 ${
+              isopen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></span>
+        </button>
+      </div>
+
+      {/* Overlay Menu */}
+      <div
+        className={`fixed top-0 right-0 h-full w-full sm:w-96 bg-black bg-opacity-90 z-40 transform transition-transform duration-500 ${
+          isopen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <ul className="flex flex-col items-center justify-center h-2/3 space-y-8">
+          <li className="text-white text-xl" onClick={closenavbar}>
+            <a href="/">Home</a>
+          </li>
+          <li className="text-white text-xl" onClick={() => { aboutnavigate(); closenavbar(); }}>
+            <a href="/about">About</a>
+          </li>
+          <li className="text-white text-xl" onClick={() => { handlenaviagte(); closenavbar(); }}>
+            <a href="/projects">Projects</a>
+          </li>
+          <li>
+            <button
+              onClick={closenavbar}
+              className="bg-white text-black rounded-lg px-6 py-2 font-semibold shadow hover:bg-gray-200 transition"
+            >
+              Close Menu
+            </button>
+          </li>
+        </ul>
+        {/* Social Icons */}
+        <div className="flex justify-center items-center gap-8 mt-12">
+          <a className="flex flex-col items-center" href="#">
+            <img className="w-8 h-8" src={whatsapp} alt="Whatsapp" />
+            <p className="text-white text-xs mt-1">Whatsapp</p>
+          </a>
+          <a className="flex flex-col items-center" href="https://www.linkedin.com/in/kakooza-harunah-701882350/">
+            <img className="w-8 h-8" src={linkdein} alt="LinkedIn" />
+            <p className="text-white text-xs mt-1">LinkedIn</p>
+          </a>
+          <a className="flex flex-col items-center" href="https://discord.com/channels/@me">
+            <img className="w-8 h-8" src={discord} alt="Discord" />
+            <p className="text-white text-xs mt-1">Discord</p>
+          </a>
+          <a className="flex flex-col items-center" href="https://github.com/devharunah">
+            <img className="w-8 h-8" src={githubfrom} alt="Github" />
+            <p className="text-white text-xs mt-1">Github</p>
+          </a>
         </div>
-        </div>
-    )
-}
-export default Hammenue
+      </div>
+    </div>
+  );
+};
+
+export default Hammenue;
