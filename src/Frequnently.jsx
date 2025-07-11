@@ -37,7 +37,7 @@ const Frequnently = ()=>{
     const phonenumber = 256778895217;
     const whatsappLink = `https://wa.me/${phonenumber}?text=${encodedmessage}`;
     return(
-        <div  className="mt-15 px-10 bg-gray-50 py-20 items-center flex  justify-center"  >
+        <div  className="mt-15 px-10 bg-gray-100 py-20 items-center flex  justify-center"  >
         <div  className="flex   max-sm:items-center max-sm:justify-center max-sm:flex-col "  >
         <div >
             <h1 style={{fontFamily:"lato"}} className="font-bold text-3xl  text-center "  >Any Quetions ?</h1>

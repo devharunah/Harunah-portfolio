@@ -15,23 +15,23 @@ const Hammenue = () => {
   return (
     <div>
       {/* Hamburger Icon */}
-      <div className="sm:hidden fixed top-6 right-6 z-50">
+      <div className="sm:hidden  fixed top-6 right-6 z-50">
         <button
           onClick={() => setisopen(!isopen)}
           className="flex flex-col gap-1 w-8 h-8 justify-center items-center focus:outline-none"
         >
           <span
-            className={`block h-1 w-8 bg-black rounded transition-all duration-300 ${
+            className={`block h-1 w-8 bg-white rounded transition-all duration-300 ${
               isopen ? "rotate-45 translate-y-2" : ""
             }`}
           ></span>
           <span
-            className={`block h-1 w-8 bg-black rounded transition-all duration-300 ${
+            className={`block h-1 w-8 bg-white rounded transition-all duration-300 ${
               isopen ? "opacity-0" : ""
             }`}
           ></span>
           <span
-            className={`block h-1 w-8 bg-black rounded transition-all duration-300 ${
+            className={`block h-1 w-8 bg-white rounded transition-all duration-300 ${
               isopen ? "-rotate-45 -translate-y-2" : ""
             }`}
           ></span>

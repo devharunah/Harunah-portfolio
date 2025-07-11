@@ -4,7 +4,7 @@ import harunahimg from  "/images/dark_cartoon.png"
 import discord from "../public/images/discord_5968759.png"
 import githubfrom from "../public/images/github_3291695.png"
 import logo from "../public/images/coding_722148.png"
-import chatbot from "../public/images/chatbot.png"
+import landingimage from "../public/images/landingimg.png"
 import close from "../public/images/close.png"
 import { useNavigate } from "react-router-dom"
 import Hammenue from "./Hambugermenu"
@@ -37,7 +37,7 @@ const Hero = ()=>{
   },[ ]);
     return(
         <div>
-          <div className=  {` flex justify-between fixed w-full rounded-xl  py-1 z-50 transition-all  px-10 pt-4  ${scrolled ?  "bg-white  shadow" : "bg- text-black" } ` }>
+          <div className=  {` flex justify-between fixed w-full rounded-xl py-1 z-50 text-white shadow-md  transition-all  px-10 pt-4  ${scrolled ?  "bg-gray-800" : "bg- text-black" } ` }>
             <div  className=" justify-between flex w-full mb-2 sm:w-auto "  >
               <div className="flex items-center"  >
                 <div>
@@ -50,11 +50,11 @@ const Hero = ()=>{
             </div>
             </div>
 
-            <div className="hidden md:flex  "  >
+            <div className="hidden md:flex "  >
                 <ul className="flex justify-between  " >
-                    <li   className="mr-6" >  <a href="/"> Home  </a>  </li>
-                    <li onClick={aboutnavigate} className="mr-6"  >   About  </li>
-                    <li onClick={handlenaviagte} > Projects</li>
+                    <li   className="mr-6 hover:cursor-pointer" >  <a href="/"> Home  </a>  </li>
+                    <li className="mr-6 hover:cursor-pointer "  >  <a href="/about">About</a>   </li>
+                    <li className="hover:cursor-pointer" > <a href="/projects">Projects</a> </li>
                 </ul>
             </div>
             
@@ -83,35 +83,40 @@ const Hero = ()=>{
       
             </div>
           </div>
-          <div className="sm:flex  justify-between  items-center border-2 bg-radial-[at_25%_25%] from-white to-zinc-900 to-75%  py-15 max-xsm:flex-col max-vsm:px-12  px-10 "   >
-            <div className="text-center sm:text-left py-10 space-y-4 sm:w-[50vw] sm:px-10" >
-              <h1 className="font-bold" >Hey,I am Harunah</h1>
+
+          <div
+          style={{ backgroundImage: `url(${landingimage})` }}
+          className=" flex justify-center h-[70vh] bg-center bg-no-repeat bg-cover items-center border-2  py-15 px-10 "   >
+            <div className="text-center text-white sm:text-left py-10 space-y-4 sm:w-[60vw] sm:px-10" >
                <div>
-                <h1 className="font-bold text-2xl sm:text-5xl" >Building Digital <span className="text-white" >Solutions</span>  with Purpose</h1>
+                <h1 className="font-bold sm:text-5xl" >Building Digital Solutions with Purpose</h1>
                </div>
-                <p className=" text-gray-900 mt-2"   >
+                <p className=" mt-2"   >
                 I design and build beautiful, responsive web experiences that connect people and ideas.
                  Blending clean code with creative visuals, I bring digital products to life with 
                  modern tools like React.js, Tailwind CSS, and thoughtful design.
                     </p>
-                    <h2   className="font-semibold text-xl mt-1 max-xsm:text-center "  >Let’s build something amazing together.</h2>
+                    <div className="flex justify-center items-center flex-col" >
+        <h2   className="font-semibold text-xl mt-1 max-xsm:text-center "  >Let’s build something amazing together.</h2>
                      <div  className=" mt-4 max-xsm:items-center space-x-4 max-xsm:flex max-xsm:justify-center  "   >
-                        <button  onClick={handlenaviagte} className=" bg-black  cursor-pointer py-2 px-4 text-white hover:bg-gray-300 rounded-sm "   >
+                        <button  onClick={handlenaviagte} className=" border-2 border-white cursor-pointer py-2 px-4 text-white hover:bg-black hover:border-0 rounded-sm "   >
                             View projects
                         </button>
-                        <button className="bg-white py-2 px-6 cursor-pointer8  ml-2 rounded-sm"  >
+                        <button className=" bg-black py-2 px-6 cursor-pointer8  ml-2 rounded-sm"  >
                          <a href={whatsappLink}>
                          Hire me 
                          
                          </a>
                             
                         </button>
+                    </div>
+                  
                      </div>
             </div>
             <div className="flex justify-center"  >
-            <div   className="max-w-xl  max-xsm:w-80  relative " >
+            {/* <div   className="max-w-xl  max-xsm:w-80  relative " >
               <img  className="relative w-full   " src={harunahimg} alt="" />
-            </div>
+            </div> */}
             </div>
           </div>
         </div>

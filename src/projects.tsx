@@ -70,7 +70,7 @@ const ProjectsSection = () => {
       : projects.filter((project) => project.category === activeFilter);
 
   return (
-    <section id="projects">
+    <section id="projects" className='mt-10'>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h3 className="text-3xl md:text-4xl font-bold text-primary">

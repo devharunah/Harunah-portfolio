@@ -38,14 +38,14 @@ const About = () => {
 
  
   return (
-    <div className="bg-white min-h-screen py-16 px-4">
+    <div className="min-h-screen py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             About Me
           </h2>
-          <div className="w-20 h-1 bg-black mx-auto"></div>
+          <div className="w-20 h-1 bg-gray-900 mx-auto"></div>
         </div>
 
         {/* Main Content */}
@@ -60,8 +60,8 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-black rounded-full"></div>
-              <div className="absolute -top-2 -left-2 w-6 h-6 bg-black rounded-full"></div>
+              <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gray-900 rounded-full"></div>
+              <div className="absolute -top-2 -left-2 w-6 h-6 bg-gray-900 rounded-full"></div>
             </div>
           </div>
 
